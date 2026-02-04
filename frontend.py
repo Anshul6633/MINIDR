@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 
 # ---------- Config ----------
 load_dotenv()
-GROQ_API_KEY= "replace ke"
-# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 if not GROQ_API_KEY:
     st.error("GROQ_API_KEY is missing. Create a .env file (see .env.example) and restart.")
@@ -274,4 +274,5 @@ with tab_vision:
 
 # ---------- Footer ----------
 st.divider()
+
 st.caption("MiniDr © 2025 • Built on Groq • Streamlit UI")
